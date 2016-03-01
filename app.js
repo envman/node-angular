@@ -14,5 +14,6 @@ app.get('/', function(request, response) {
 });
 
 app.use(express.static('public'));
+app.use('/packages', express.static('bower_components'));
 
 app.listen(8080);

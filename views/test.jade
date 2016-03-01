@@ -1,19 +1,15 @@
 doctype html
-html(lang="en")
+html(lang="en" ng-app="app")
   head
-    title sites
+    title Node-Angular
     link(href="/css/bootstrap.min.css" rel="stylesheet" type="text/css")
     link(href="/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css")
+    
+    script(src="/packages/angular/angular.min.js")
+    script(src="/scripts/client.js")
     //- link(href="/css/home.css" rel="stylesheet" type="text/css")
-  body
-    #page-content-wrapper
-      h1 Bootstrap Example
-        fieldset.form-group
-          label Enter some text
-          input(type="text").form-control.input
-        fieldset.form-group
-          a.btn.btn-primary.test-button Click me
+  body(ng-controller="testController as test") {{test.text}}
           
-    script(src="/scripts/jquery-1.12.0.min.js")
+    script(src="/packages/jquery/dist/jquery.min.js")
     script(src="/scripts/bootstrap.min.js")
     script(src="/scripts/test.js")

@@ -1,0 +1,27 @@
+{
+  "name": "node-angular",
+  "description": "A node-angular template",
+  "main": "app.js",
+  "authors": [
+    "Robert Gill <envman@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "web",
+    "template"
+  ],
+  "homepage": "https://github.com/envman/node-angular",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "angular": "^1.5.0"
+  }
+}
